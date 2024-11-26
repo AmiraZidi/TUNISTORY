@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuniStory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="w-full flex flex-col bg-[#363731]  items-center justify-center min-h-screen  relative">
+    <div class="bg-[#363731] flex items-center justify-center min-h-screen w-full relative ">
+        <img src="./img/Tunistory.png" alt="Tunistory" class="h-[561px] w-48 absolute top-1/2 left-36 -translate-y-1/2 z-10">
+        <div class="bg-[#363731] opacity-50">
+            <img src="./img/homepage.jpg" alt="Tunisian history" class="w-[900px] h-[500px] object-cover z-0">
+        </div>
+        <div class="absolute flex-col flex items-center justify-start text-white opacity-100 w-full h-full max-w-[900px] max-h-[500px]">
+            <div class="flex w-[723px] items-start justify-between mt-5">
+                <h1 class="text-[#D0A933] font-light" style="font-family: 'ITCBenguiatStdBookCn';">TUNISTORY</h1>
+                <ul class="nav flex space-x-5 text-white">
+                    <li><a href="index.html" class="hover:text-[#D0A933]">HOME</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" class="dropbtn hover:text-[#D0A933]">ERAS</a>
+                        <div class="dropdown-content absolute hidden bg-[#363731] text-white shadow-lg rounded-md">
+                            <a href="./capsian.html" class="block px-4 py-2 hover:bg-[#D0A933]">Capsian ERAS</a>
+                            <a href="./carthage.html" class="block px-4 py-2 hover:bg-[#D0A933]">Carthage ERAS</a>
+                            <a href="./roman.html" class="block px-4 py-2 hover:bg-[#D0A933]">Roman ERAS</a>
+                            <a href="./bizantine.html" class="block px-4 py-2 hover:bg-[#D0A933]">Bizantine ERAS</a>
+                            <a href="./muslim.html" class="block px-4 py-2 hover:bg-[#D0A933]">Muslim ERAS</a>
+                        </div>
+                    </li>
+                    <li><a href="shop.html" class="hover:text-[#D0A933]">SHOP</a></li>
+                    <li><a href="contact.html" class="hover:text-[#D0A933]">CONTACT US</a></li>
+                </ul>
+            </div>
+            
+            <div class="mt-[70px] mb-[140px] flex flex-col justify-center items-center">
+                <h1 class="tunistory-title text-[#D0A933] text-[120px] text-center font-light" style="font-family: 'ITCBenguiatStdBookCn';">TUNISTORY</h1>
+                <p class=" w-[580px] text-center mt-[-59px] drop-shadow-lg">
+                    Welcome to Tunistory, where the vibrant heritage of Tunisia comes to life. 
+                    Explore the captivating stories of ancient civilizations, from the Capsian culture to 
+                    the Arab Muslim conquest, and uncover the remarkable journey that shaped this unique land. 
+                    Dive into a blend of history, art, and innovation that celebrates Tunisia's timeless legacy.
+                </p>
+            </div>
+                
+        </div>
+        <img src="./img/Tunistory.png" alt="Tunistory" class="h-[561px] w-48 absolute top-1/2 right-36 -translate-y-1/2 z-10">
+    </div>
+    <div class="flex justify-center items-end absolute space-x-5 w-full h-20 mt-[450px]">
+        <div class="flex flex-col justify-center items-center timeline-item transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <a href="./capsian.html">
+                <h4 class="text-white font-semibold">Capsian Era</h4>
+                <img class="w-[70px] h-auto" src="./img/khlel.png" alt="Image representing the Capsian Era">
+            </a>
+            
+        </div>
+        <div class="flex flex-col justify-center items-center timeline-item transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <a href="./carthage.html">
+                <h4 class="text-white font-semibold">Carthage Era</h4>
+                <img class="w-[70px] h-auto" src="./img/khlel.png" alt="Image representing the Carthage Era"></a>
+            
+        </div>
+        <div class="flex flex-col justify-center items-center timeline-item transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <a href="./roman.html"><h4 class="text-white font-semibold">Roman Era</h4></a>
+            <img class="w-[70px] h-auto" src="./img/khlel.png" alt="Image representing the Roman Era">
+        </div>
+        <div class="flex flex-col justify-center items-center timeline-item transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <a href="./bizantine.html"><h4 class="text-white font-semibold">Bizantine Era</h4></a>
+            <img class="w-[70px] h-auto" src="./img/khlel.png" alt="Image representing the Bizantine Era">
+        </div>
+        <div class="flex flex-col justify-center items-center timeline-item transition-transform duration-300 ease-in-out transform hover:scale-110">
+            <a href="./muslim.html"><h4 class="text-white font-semibold">Muslim Era</h4></a>
+            <img class="w-[70px] h-auto" src="./img/khlel.png" alt="Image representing the Muslim Era">
+        </div>
+    </div>
+    
+    <!-- <div>
+        <div class="sketchfab-embed-wrapper"> 
+            <iframe title="El-Jem-section-txt" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+            webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking 
+            execution-while-out-of-viewport execution-while-not-rendered web-share 
+            src="https://sketchfab.com/models/6f7c776c5b7f46469387b63d531b7feb/embed"> 
+            </iframe> 
+        </div>
+    </div> -->
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
