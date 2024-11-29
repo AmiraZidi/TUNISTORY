@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Carthage Pro";
+    src: url("./font/Carthage Pro Regular.ttf");
+  }
+.infosec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.slider-container {
+    width: 800px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.nav-btn {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.curved {
+    position: relative;
+    height: 50vh;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+  }
+
+
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+/* Keyframes for the blinking caret */
+@keyframes blink-caret {
+from, to { border-color: transparent; }
+50% { border-color: orange; }
+}
+
+/* Typewriter effect styles */
+.typewriter {
+overflow: hidden; /* Ensures content doesn't overflow the container */
+white-space: nowrap; /* Keeps text on one line */
+border-right: 2px solid orange; /* Creates the caret */
+animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}

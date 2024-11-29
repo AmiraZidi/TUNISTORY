@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUNISTORY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+        * {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav a:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out, color 0.3s;
+        }
+        .form-input:focus {
+            border-color: #D0A933;
+            box-shadow: 0 0 8px #D0A933;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(90deg, #D0A933, #f5f5f5);
+            color: #363731;
+        }
+        .toggle-btn[aria-checked="true"] {
+            background-color: #D0A933 !important;
+        }
+        .toggle-btn[aria-checked="true"] .toggle-thumb {
+            transform: translateX(3.5rem) !important;
+        }
+    </style>
+</head>
+<body class="bg-[#f5f5f5]">
+    <header class="absolute py-4 px-8 w-full z-50 bg-[#f5f5f5] shadow-md">
+        <div class="flex items-center justify-between mt-5">
+            <a href="index.html">
+                <h1 class="text-[#363731] font-bold text-[25px] hover:scale-110 transition-transform">
+                    TUNISTORY
+                </h1>
+            </a>
+            <ul class="nav flex space-x-5 text-[#363731] font-semibold">
+                <li><a href="index.html" class="hover:text-[#D0A933]">HOME</a></li>
+                <li class="dropdown relative group">
+                    <a href="#" class="dropbtn hover:text-[#D0A933]">ERAS</a>
+                    <div class="dropdown-content absolute hidden group-hover:block bg-[#363731] text-white shadow-lg rounded-md mt-2">
+                        <a href="./carthage.html" class="block px-4 py-2">Carthage ERAS</a>
+                        <a href="./roman.html" class="block px-4 py-2">Roman ERAS</a>
+                        <a href="./bizantine.html" class="block px-4 py-2">Bizantine ERAS</a>
+                        <a href="./muslim.html" class="block px-4 py-2">Muslim ERAS</a>
+                    </div>
+                </li>
+                <li><a href="shop.html" class="hover:text-[#D0A933]">SHOP</a></li>
+                <li><a href="contact.html" class="hover:text-[#D0A933]">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section>
+            <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 shadow-md rounded-lg">
+                <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+                  <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                </div>
+                <div class="mx-auto max-w-2xl text-center">
+                  <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact Our Team</h2>
+                  <p class="mt-2 text-lg text-gray-600">TUNISTORY IS ALWAYS HERE FOR YOU!</p>
+                </div>
+                <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+                  <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                    <div>
+                      <label for="first-name" class="block text-sm font-semibold text-gray-900">First name</label>
+                      <input type="text" id="first-name" class="form-input mt-2 w-full rounded-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-[#D0A933]">
+                    </div>
+                    <div>
+                      <label for="last-name" class="block text-sm font-semibold text-gray-900">Last name</label>
+                      <input type="text" id="last-name" class="form-input mt-2 w-full rounded-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-[#D0A933]">
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
+                    <div class="mt-2.5">
+                      <textarea name="message" id="message" rows="4" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <button type="submit" class="w-full rounded-md bg-[#D0A933] py-3 text-lg font-bold text-white hover:bg-[#b9962d]">Let's Talk</button>
+                  </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

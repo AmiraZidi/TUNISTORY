@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f5f5f5]">
+        <header class="bg-[#d0b286] py-2 px-8 relative">
+            <div class="flex items-center justify-between mt-5">
+                <a href="index.html" class="text-[#363731] font-light text-[25px] font-serif">TUNISTORY</a>
+                <ul class="flex space-x-8 text-[#363731] z-50">
+                    <li><a href="index.html" class="hover:text-[#D0A933] transition-colors">HOME</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-[#D0A933] transition-colors">ERAS</a>
+                        <div class="absolute hidden group-hover:block bg-[#363731] text-white shadow-lg rounded-md mt-2">
+                            <a href="./carthage.html" class="block px-4 py-2 hover:bg-[#D0A933]">Carthage ERAS</a>
+                            <a href="./roman.html" class="block px-4 py-2 hover:bg-[#D0A933]">Roman ERAS</a>
+                            <a href="./bizantine.html" class="block px-4 py-2 hover:bg-[#D0A933]">Bizantine ERAS</a>
+                            <a href="./muslim.html" class="block px-4 py-2 hover:bg-[#D0A933]">Muslim ERAS</a>
+                        </div>
+                    </li>
+                    <!-- Shopping Card -->
+                    <li class="relative group ">
+                        <button class="text-[#4d3a1f] hover:text-[#D0A933] flex justify-around w-[71px]">
+                            <i class="fa fa-cart-shopping text-lg"></i>
+                            <span id="cart-count" class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 p-4 w-64 right-0">
+                            <h2 class="text-[#4d3a1f] text-2xl font-bold mb-4 text-center">Shopping Cart</h2>
+                            <div id="cart-items">
+                                <!-- Cart items will appear here -->
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                                <div class="flex justify-between mb-3">
+                                    <p class="text-[#d0b286]">Subtotal</p>
+                                    <input type="text" value="0" class="subtotal bg-gray-100 w-[50px] font-bold text-[#4d3a1f] text-right" style="border:none;" disabled>
+                                </div>
+                                <div class="flex justify-between mb-3">
+                                    <p class="text-[#d0b286]">Delivery Charge</p>
+                                    <p class="font-bold text-[#4d3a1f]">10DT</p>
+                                </div>
+                                <div class="flex justify-between font-bold text-lg">
+                                    <p class="text-[#212e51]">Total</p>
+                                    <input type="text" value="0" class="total bg-gray-100 w-[50px] font-bold text-[#4d3a1f] text-right" style="border:none;" disabled>
+                                </div>
+                            </div>
+                            <div class="flex justify-center gap-4 mt-6">
+                                <button class="px-6 py-3 bg-[#4d3a1f] text-gray-100 rounded-lg" ><a href="payment.html">Continue to Payment</a></button>
+                            </div>
+                        </div>
+                    </li>
+                    
+        
+                    <li><a href="contact.html" class="hover:text-[#D0A933] transition-colors">CONTACT US</a></li>
+                </ul>
+            </div>
+        </header>
+    <main class="relative">
+    <section>
+        <div class="flex flex-row">
+            <div class="w-1/2 ml-24">
+                <img src="./img/Shop.png" class="w-[90%] h-auto -z-10">
+                <h1 class="text-[#D0A933] absolute text-bold font-extrabold z-10 top-[140px] left-[26%] w-[10%] transform -translate-x-1/2 text-center text-[45px]" style="font-family: 'ITCBenguiatStdBookCn'; text-shadow: 1px 1px 6px rgba(0,0,0,0.25);">
+                    Shop from your favourite era
+                </h1>
+            </div>
+            <div class="w-1/2 flex justify-center items-center text-center text-[35px] mr-20">
+                <ul class="w-[50%] flex flex-col items-center justify-center">
+                    <img src="./img/shop separation.png" class="mt-[-20px] mb-[-20px] w-[30%]" alt="">
+                    <li class="hover:scale-[1.3]">
+                        <a class="hover:text-[#D0A933]" href="#carthage">Carthage</a>
+                    </li>
+                    <img src="./img/shop separation.png" class="mt-[-20px] mb-[-20px] w-[30%]" alt="">
+                    <li class="hover:scale-[1.3]">
+                        <a class="hover:text-[#D0A933]" href="#roman">Roman</a>
+                    </li>
+                    <img src="./img/shop separation.png" class="mt-[-20px] mb-[-20px] w-[30%]" alt="">
+                    
+                    <li class="hover:scale-[1.3]">
+                        <a class="hover:text-[#D0A933]" href="#bizantine">Byzantine</a>
+                    </li>
+                    <img src="./img/shop separation.png" class="mt-[-20px] mb-[-20px] w-[30%]" alt="">
+                    
+                    <li class="hover:scale-[1.3]">
+                        <a class="hover:text-[#D0A933]" href="#muslim">Muslim</a>
+                    </li>
+                    <img src="./img/shop separation.png" class="mt-[-20px] mb-[-20px] w-[30%]" alt="">
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    <section class="py-16" id="carthage">
+    <div class="mx-auto w-[30%]" >
+        <h2 class="text-[#4d3a1f] text-3xl font-bold mb-8 text-center">Carthage Era Products</h2>
+        <div class="flex flex-wrap justify-center gap-8" id="product-cards">
+            <div class="flex flex-row justify-center gap-8">
+                <!-- Product Card 1 -->
+                <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                    <img src="./img/shop/carthage/belt.jpg"
+                         class="w-full h-64 object-cover rounded-lg">
+                    <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Carthaginian Belt</h3>
+                    <p class="text-sm text-[#d0b286]">Gold</p>
+                    <div class="flex items-center gap-4 mt-4">
+                        <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                        <input type="text" value="1" id="qntty1" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                        <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                    </div>
+                    <input type="text" value="135" id="price1" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                    <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                    <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                </div>
+    
+                <!-- Product Card 2 -->
+                <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                    <img src="./img//shop/carthage/hannibalposter.png" 
+                         alt="Fall Of Carthage" 
+                         class="w-full h-64 object-cover rounded-lg">
+                    <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Hannibal Poster </h3>
+                    <p class="text-sm text-[#d0b286]">Black & White</p>
+                    <div class="flex items-center gap-4 mt-4">
+                        <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                        <input type="text" value="1" id="qntty2" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                        <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                    </div>
+                    <input type="text" value="40" id="price2" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                    <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                    <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                </div>
+    
+                <!-- Product Card 3 -->
+                <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                    <img src="./img/homepage.jpg" 
+                         alt="Dido construisant Carthage" 
+                         class="w-full h-64 object-cover rounded-lg">
+                    <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Dido construisant Carthage</h3>
+                    <p class="text-sm text-[#d0b286]">by Joseph Mallord William Turner</p>
+                    <div class="flex items-center gap-4 mt-4">
+                        <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                        <input type="text" value="1" id="qntty3" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                        <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                    </div>
+                    <input type="text" value="259" id="price3" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                    <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                    <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                </div>
+    
+                <!-- Product Card 4 -->
+                <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                    <img src="./img/shop/carthage/book.jpg" 
+                         alt="Fall Of Carthage" 
+                         class="w-full h-64 object-cover rounded-lg">
+                    <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Fall Of Carthage</h3>
+                    <p class="text-sm text-[#d0b286]">Book</p>
+                    <div class="flex items-center gap-4 mt-4">
+                        <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                        <input type="text" value="1" id="qntty4" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                        <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                    </div>
+                    <input type="text" value="45" id="price4" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                    <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                    <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16" id="roman">
+        <div class="mx-auto w-[30%]" >
+            <h2 class="text-[#4d3a1f] text-3xl font-bold mb-8 text-center">Roman Era Products</h2>
+            <div class="flex flex-wrap justify-center gap-8" id="product-cards">
+                <div class="flex flex-row justify-center gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/roman/acc.jpg"
+                             class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Romanian Arm Cuff</h3>
+                        <p class="text-sm text-[#d0b286]">Gold</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty5" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="135" id="price5" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="//insighteditions.com/cdn/shop/products/84351-103978-cover_2048x2048.jpg?v=1651269794" 
+                             alt="Roman Tresure Poster" 
+                             class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Roman Tresure Poster </h3>
+                        <p class="text-sm text-[#d0b286]">Red and Gold</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty6" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="40" id="price6" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+        
+                    <!-- Product Card 3 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/roman/tableau.jpg" 
+                             alt="The Battle of Zaama" 
+                             class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">The Battle of Zaama</h3>
+                        <p class="text-sm text-[#d0b286]">by sailko</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty7" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="259" id="price7" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+        
+                    <!-- Product Card 4 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/roman/Book.jpg" 
+                             alt="Fall Of Rome" 
+                             class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Fall Of Rome</h3>
+                        <p class="text-sm text-[#d0b286]">Book</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty8" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="45" id="price8" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16" id="Byzantine">
+        <div class="mx-auto w-[30%]" >
+            <h2 class="text-[#4d3a1f] text-3xl font-bold mb-8 text-center">Byzantine Era Products</h2>
+            <div class="flex flex-wrap justify-center gap-8" id="product-cards">
+                <div class="flex flex-row justify-center gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/byzantine/bin.jpg"
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Amazigh Bin</h3>
+                        <p class="text-sm text-[#d0b286]">Gold</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty9" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="135" id="price9" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/byzantine/poster.jpg" 
+                                alt="Amazigh Poster" 
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Amazigh Poster </h3>
+                        <p class="text-sm text-[#d0b286]">Red and Gold</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty10" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="40" id="price10" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+        
+                    <!-- Product Card 3 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/byzantine/kohl.jpg" 
+                                alt="Old Amazigh eyeliner" 
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Old Amazigh eyeliner "Kohl"</h3>
+                        <p class="text-sm text-[#d0b286]">Black</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty11" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="30" id="price11" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+        
+                    <!-- Product Card 4 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/byzantine/books.jpg" 
+                                alt="Berber Tattooing" 
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Berber Tattooing</h3>
+                        <p class="text-sm text-[#d0b286]">Book</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty12" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="45" id="price12" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16" id="muslim">
+        <div class="mx-auto w-[30%]" >
+            <h2 class="text-[#4d3a1f] text-3xl font-bold mb-8 text-center">Muslim Era Products</h2>
+            <div class="flex flex-wrap justify-center gap-8" id="product-cards">
+                <div class="flex flex-row justify-center gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/muslim/sebha.jpg"
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Sebha</h3>
+                        <p class="text-sm text-[#d0b286]">Black & Gold</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty13" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="30" id="price13" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/muslim/mabkhra.jpg" 
+                                alt="Mabkhra" 
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Mabkhra</h3>
+                        <p class="text-sm text-[#d0b286]">Black & Gold</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty14" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="45" id="price14" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+        
+                    <!-- Product Card 3 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/muslim/tableau.jpg" 
+                                alt="Old Islamic Art" 
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">Old Islamic Art "miniature"</h3>
+                        <p class="text-sm text-[#d0b286]">Art</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty15" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="359" id="price15" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+        
+                    <!-- Product Card 4 -->
+                    <div class="card-body flex flex-col items-center bg-white shadow-md p-6 rounded-lg w-64">
+                        <img src="./img/shop/muslim/quran.jpg" 
+                                alt="The Quran" 
+                                class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-medium text-[#4d3a1f] mt-4">The Quran</h3>
+                        <p class="text-sm text-[#d0b286]">Book</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <button class="minus px-4 py-2 bg-[#d0b286] text-white rounded-full">-</button>
+                            <input type="text" value="1" id="qntty16" class="quantity w-12 text-center border border-[#d0b286] rounded-md">
+                            <button class="plus px-4 py-2 bg-[#d0b286] text-white rounded-full">+</button>
+                        </div>
+                        <input type="text" value="45" id="price16" class="unit-price text-lg font-bold text-[#212e51] bg-white mt-4" style="border:none; font-weight: 300; text-align: center;" disabled>
+                        <button class="buy bg-[#d0b286] px-6 py-2 text-white rounded-md w-[90%] mt-4">Buy</button>
+                        <div class="success-message text-green-600 border-green-600 bg-green-100 text-sm py-1 px-4 mt-2 rounded-md hidden">Product successfully added!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#d0b286] text-center py-4 text-white">
+        <p>© 2024 TUNISTORY - Developed by Amira Zidi and Khouloud Gharib</p>
+    </footer>
+        <script src="shop.js"></script>
+</body>
+</html>
