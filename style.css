@@ -1,104 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:wght@400;600&display=swap");
 @font-face {
-    font-family: 'TypeOldDemoItalic';
-    src: url('./font/TypeOldDemoItalic.ttf');
+  font-family: "TypeOldDemoItalic";
+  src: url("./font/TypeOldDemoItalic.ttf");
 }
 @font-face {
-    font-family: 'ITCBenguiatStdBookCn';
-    src: url('./font/itc-benguiat-std/ITCBenguiatStdBookCn.OTF');
+  font-family: "ITCBenguiatStdBookCn";
+  src: url("./font/itc-benguiat-std/ITCBenguiatStdBookCn.OTF");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1a1a1a;
-    font-family: 'Crimson Text', serif;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  font-family: "ITCBenguiatStdBookCn" !important;
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .nav ul {
-    width: 350px;
-    display: flex;
-    justify-content: space-around;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav li {
-    margin: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 .nav a {
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.52);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.52);
 }
 
 .nav a:hover {
-    color: #D0A933;
+  color: #d0a933;
 }
-
 
 .timeline-item:hover {
-    transform: translateY(-30%) scale(1);
-    width: 100px;
+  transform: translateY(-30%) scale(1);
+  width: 100px;
 }
-
-
 
 /* Dropdown container */
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 /* Dropdown content */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #363731;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #363731;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 5px;
 }
 
 /* Dropdown links */
 .dropdown-content a {
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-content a:hover {
-    background-color: #D0A933;
-    color: white;
+  background-color: #d0a933;
+  color: white;
 }
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Style for the dropdown button */
 .dropbtn {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }

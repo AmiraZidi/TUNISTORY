@@ -1,0 +1,158 @@
+.nav1{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .nav ul {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav li {
+    margin: 0 10px 0 10px;
+  }
+  
+  .nav a {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.52); text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: #d0a933;
+  }
+  
+  .timeline-item:hover {
+    transform: translateY(-30%) scale(1);
+    width: 100px;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #363731;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown links */
+  .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d0a933;
+    color: white;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style for the dropdown button */
+  .dropbtn {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+
+
+
+  /* section1 */
+.section{  width: 772px;
+    height: 750px;
+    display: flex;justify-content:center; background-image: url(https://cdn.pixabay.com/photo/2016/12/05/15/06/pattern-1884062_1280.jpg);
+}
+.section1 {
+    width: 672px;
+    height: 700px;
+    display: flex;justify-content:center;
+}
+
+  .section1 img{
+    width:523px;
+    height: 62%;
+   margin-top: 38px;
+  }
+.section1 p{
+    font-family: cormorant infant; 
+}
+
+.first{
+    
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/05/15/06/pattern-1884062_1280.jpg);
+}
+
+
+.section2 img:hover {
+    width:100px ; height:155px;
+}
+
+
+.arabic {
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 135px;
+    display: flex;justify-content: center;
+  }
+
+  .title{ font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 135px;
+    display: flex;justify-content: center;
+}
+
+.section3 .text8{
+    font-family:'Times New Roman', Times, serif;margin: 20px; display: flex;  flex-direction: column;justify-content: center;;
+    text-align: justify;
+}
+.section3{
+    color:#ffffff;
+    font-size: 19px;
+    background-color: #c0ac90;
+    width: 952px;
+    display:flex; justify-self: center;
+}
+
+.videos{
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/05/15/06/pattern-1884062_1280.jpg);
+ 
+}
+
+.videos .text8{
+    font-family:'Times New Roman', Times, serif!important;margin: 20px; display: flex;  flex-direction: column;justify-content: center;;
+    text-align: justify;
+}
+
+
+  
